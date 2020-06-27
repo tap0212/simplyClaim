@@ -1,0 +1,63 @@
+.searchbox{
+    width: 18.75vw;
+    margin-left: 3.125vw;
+    background-color: #202020;
+    .search{
+        height: 5.55vh;
+        border-bottom: 3px solid #121212;
+        .searchSvg{
+            height: 55%;
+            padding: 3%;
+            margin-right: 5%;
+        }
+        input{
+            margin-top: 0;
+            width: 75%;
+            margin-left: 20%;
+            height: 4.5vh;
+            background-color: #202020;
+            border: none;
+            transform: translateY(-5.7vh);
+            font-family: Poppins;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .toggleBar{
+        height: 6.11vh;
+        border-bottom: 3px solid #121212;
+        .toggle{
+            margin-top: 1%;
+            span{
+                cursor: pointer;
+                margin-left: 10%;
+                font-size: 1em;
+                font-family: Poppins;
+                line-height: 1.4;
+                letter-spacing: normal;
+                color: rgba(255, 255, 255, 0.6);
+            }
+            .selectedTab{
+                border-bottom: 4px solid blue;
+            }
+        }
+        p{
+            font-size: 0.8em;
+            margin-left: 10%;
+            font-family: Poppins;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: #61d4ff;
+            .arrow{
+                margin-left: 5px;
+                font-size: 90%;
+                transform: translateY(2px);;
+            }
+        }
+    }
+}

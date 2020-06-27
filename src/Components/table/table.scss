@@ -1,0 +1,22 @@
+.providerTable{
+    width: 100%;
+    background-color: #202020;
+    .noProvider{
+        p{
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding: 2%;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .orange{
+            margin-top: 0;
+            padding-top: 0;
+            font-family: Poppins;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: #df7833;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+[
+    {
+        "name":"Alex Wonderman",
+        "activity":"General Practice",
+        "type":"Provider",
+        "bank": [
+            {
+                "name":"Bank Of Sydney",
+                "number":1075643892
+            },
+            {
+                "name":"Bank of Australia",
+                "number":6758493026
+            }
+        ]
+    },
+    {
+        "name":"Xing  Chingchog",
+        "activity":"Specialist",
+        "type":"Provider",
+        "bank": [
+            {
+                "name":"Bank Of Sydney",
+                "number":1075643892
+            },
+            {
+                "name":"Bank of Australia",
+                "number":6758493026
+            }
+        ]
+    },
+    {
+        "name":"John Doe",
+        "activity":"Physician",
+        "type":"Provider",
+        "bank": [
+            {
+                "name":"Bank Of Sydney",
+                "number":1075643892
+            },
+            {
+                "name":"Bank of Australia",
+                "number":6758493026
+            }
+        ]
+    },
+    {
+        "name":"Andrew Xavier",
+        "activity":"Dentist",
+        "type":"Provider",
+        "bank": [
+            {
+                "name":"Bank Of Sydney",
+                "number":1075643892
+            },
+            {
+                "name":"Bank of Australia",
+                "number":6758493026
+            }
+        ]
+    },
+    {
+        "name":"Lucifer Morningstar",
+        "activity":"Psychologist",
+        "type":"Provider",
+        "bank": [
+            {
+                "name":"Bank Of Sydney",
+                "number":1075643892
+            },
+            {
+                "name":"Bank of Australia",
+                "number":6758493026
+            }
+        ]
+    }
+]

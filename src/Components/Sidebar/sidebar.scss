@@ -1,0 +1,171 @@
+.sidebar{
+    margin: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    .user{
+        height: 7vh;
+        padding-bottom: 10%;
+        border-bottom: 2px solid black;
+        h3{
+            margin-left: 10%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        p{
+            margin-left: 10%;
+            margin-top: 0;
+            padding-top: 0;
+            font-size: 0.8em;
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: #61d4ff;
+        }
+        .userSvg{
+            float: right;
+            padding: 15%;
+            margin-right: 7%;
+            height: 40%;
+        }
+    }
+
+    .options{
+        height: 17.91vh;
+        padding-bottom: 5%;
+        border-bottom: 2px solid black;
+        li{
+           
+            margin-top: 10%;
+            list-style: none;
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.4);
+            .practiceSvg, .paymentSvg, .contractSvg{
+                margin-right: 10%;
+                width: 9%;
+            }
+            .lockSvg{
+                width: 10%;
+                float: right;
+                margin-right: 15%;
+            }
+        }
+        li:hover{
+            cursor: not-allowed;
+            pointer-events: all !important;
+        }
+       
+    }
+    .up{
+        height: 120px;
+    }
+    .down{
+        overflow: hidden;
+        .assets{
+            
+            list-style: none;
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 10%;
+            font-size: 1.15em;
+            .assetsSvg{
+                width: 9%;
+                margin-left: 11%;
+                margin-right: 5%;
+            }
+            .arrowSvg{
+                float: right;
+                padding-top: 2%;
+                margin-right: 20%;
+            }
+        }
+        li:hover{
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .list{
+            ul{
+                margin-left: 10%;
+            }
+            li{
+                margin-top: 5%;
+                font-size: 0.9em;
+                list-style: none;
+                font-family: Poppins;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                color: rgba(255, 255, 255, 0.4);
+            }
+            .selected{
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+
+       
+    }
+
+    .line{
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 2px;
+        width: 42px;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    .summary-li{
+        list-style: none;
+        font-family: Poppins;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 10%;
+        font-size: 1.15em;
+        cursor: pointer;
+        .summarySvg{
+            margin-top: 10px;
+            width: 9%;
+            margin-left: 11%;
+            margin-right: 5%;
+        }
+    }
+
+    .logo{
+        .logoImg{
+            cursor: pointer;
+            width: 160px;
+            margin-left: 40px;
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 0.8%;
+        }
+    }
+}

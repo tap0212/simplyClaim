@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Downtown Clinic",
+        "address":"1 Test Street Sydney NSW 2000",
+        "company":"ABC Pty ltd" 
+    },
+    {
+        "name":"Overseas Clinic",
+        "address":"2 Test Street Sydney NSW 2000",
+        "company":"Lego Pty ltd" 
+    },
+    {
+        "name":"Wakanda Clinic",
+        "address":"01 Wakanda Street Sydney NSW 2000",
+        "company":"t'challa Pty ltd" 
+    }
+]

@@ -1,0 +1,84 @@
+.tile{
+    padding: 1%;
+    height: 5.55vh;
+    border-bottom: 3px solid #121212;
+    .user{
+        width: 80%;
+        .avatar{
+            display: inline;
+            .png{
+                width: 9%;
+                padding: 2.5%;
+            }
+            .name{
+                margin: 0;
+                padding: 0;
+                margin-left: 15%;
+                margin-top: -15%;
+                font-size: 0.9em;
+                font-family: Poppins;
+                font-weight: 500;
+                line-height: 1.4;
+                color: rgba(255, 255, 255, 0.9);
+            }
+            .des{
+                font-family: Poppins;
+                line-height: 1.5;
+                font-size: 0.7em;
+                margin-top: 1%;
+                margin-left: 15%;
+                color: rgba(255, 255, 255, 0.6);
+            }
+            .dr{
+                margin-left: 95%;
+                img{
+                    width: 8%;
+                    margin: 0;
+                    transform: translateY(-130%);
+                }
+            }
+            .add{
+                margin-left: 110%;
+                img{
+                    width: 8%;
+                    margin: 0;
+                    transform: translateY(-250%);
+                }
+            }
+            .add2{
+                margin-left: 110%;
+                img{
+                    width: 8%;
+                    margin: 0;
+                    transform: translateY(-230%);
+                    margin-top: 5%;
+                }
+            }
+            .add:hover, .add2:hover{
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:2000px){
+    .tile{
+        height: 4vh;
+    }
+    .dr{
+        img{
+            transform: translateY(-90%);
+        }
+    }
+    .add{
+        img{
+            transform: translateY(-210%);
+        }
+    }
+    .add2{
+        img{
+            transform: translateY(-130%);
+        }
+    }
+}

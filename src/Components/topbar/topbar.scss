@@ -1,0 +1,194 @@
+.topbar{
+    z-index: 999;
+    height: 14.44vh;
+    border-bottom: 3px solid #202020;
+    width: calc(100vw - 250px);
+    margin-left: 250px;
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    p{
+        font-family: Poppins;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        font-size: 1em;
+        letter-spacing: normal;
+        color: #69cdff;
+        cursor: pointer;
+        .back{
+            margin-left: 2%;
+            transform: translateY(3px);
+        }
+    }
+
+    .hospitalDetail{
+        h1{
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 1.9em;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.9);
+            margin-left: 2%;
+            margin-bottom: 0.5%;
+        }
+        h4{
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.6);
+            margin-left: 2%;
+            margin-top: 0;
+            .dot{
+                font-size: 10px;
+            }
+        }
+        .proceed-btn-active{
+            border: 2px solid #202020;
+            float: right;
+            margin-right: 50px;
+            padding: 10px 30px 10px 30px;
+            border-radius: 5px;
+            background-color: #0f6ebe;
+            font-size: 1.2em;
+            font-family: Poppins;
+            font-style: normal;
+            line-height: 1.33;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-80px);
+            transition: all 0.2s ease-in;
+        }
+        .proceed-btn-active:hover, .proceed-btn-active:active{
+            cursor: pointer;
+            border: 2px solid #202020;
+            border-radius: 5px;
+            background-color: #121212;
+        }
+        .proceed-btn-disabled{
+            border: 2px solid #202020;
+            float: right;
+            margin-right: 50px;
+            padding: 10px 30px 10px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-family: Poppins;
+            font-style: normal;
+            line-height: 1.33;
+            text-align: center;
+            background-color: #121212;
+            color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-80px);
+            transition: all 0.2s ease-in;
+        }
+        .proceed-btn-disabled:hover, .proceed-btn-disabled:active{
+            cursor: not-allowed;
+            pointer-events: all !important;
+        }
+    }
+}
+
+.minibar{
+    z-index: 999;
+    height: 9.5vh;
+    border-bottom: 3px solid #202020;
+    width: calc(100vw - 250px);
+    margin-left: 250px;
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    p{
+        font-family: Poppins;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        font-size: 1em;
+        letter-spacing: normal;
+        color: #69cdff;
+        cursor: pointer;
+        .back{
+            margin-left: 2%;
+            transform: translateY(3px);
+        }
+    }
+
+    .hospitalDetail{
+        .name{
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 1.5em;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.9);
+            margin-left: 2%;
+            margin-bottom: 0.5%;
+        }
+        .address{
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: rgba(255, 255, 255, 0.6);
+            margin-left: 2%;
+            margin-top: 0;
+            font-size: 0.9em;
+            .dot{
+                font-size: 10px;
+            }
+        }
+        .proceed-btn-active{
+            border: 2px solid #202020;
+            float: right;
+            margin-right: 50px;
+            padding: 6px 25px 6px 25px;
+            border-radius: 5px;
+            background-color: #0f6ebe;
+            font-size: 1em;
+            font-family: Poppins;
+            font-style: normal;
+            line-height: 1.33;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-20px);
+            transition: all 0.2s ease-in;
+        }
+        .proceed-btn-active:hover, .proceed-btn-active:active{
+            cursor: pointer;
+            border: 2px solid #202020;
+            border-radius: 5px;
+            background-color: #121212;
+        }
+        .proceed-btn-disabled{
+            border: 2px solid #202020;
+            float: right;
+            margin-right: 50px;
+            padding: 6px 25px 6px 25px;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: Poppins;
+            font-style: normal;
+            line-height: 1.33;
+            text-align: center;
+            background-color: #121212;
+            color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-20px);
+            transition: all 0.2s ease-in;
+        }
+        .proceed-btn-disabled:hover, .proceed-btn-disabled:active{
+            cursor: not-allowed;
+            pointer-events: all !important;
+        }
+    }
+}

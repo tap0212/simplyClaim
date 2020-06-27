@@ -1,0 +1,27 @@
+[
+    {
+        "name":"Ella Lopez",
+        "gender":"Female",
+        "type":"User"
+    },
+    {
+        "name":"Linda Garcia",
+        "gender":"Female",
+        "type":"User"
+    },
+    {
+        "name":"Chris Xavier",
+        "gender":"Male",
+        "type":"User"
+    },
+    {
+        "name":"John Edell",
+        "gender":"Male",
+        "type":"User"
+    },
+    {
+        "name":"Monica Sanders",
+        "gender":"Female",
+        "type":"User"
+    }
+]
