@@ -1,8 +1,52 @@
 import React, {useState, useEffect} from 'react'
 import Cross from '../../../Utils/Assets/cancel@3x.png'
 import {Grid} from '@material-ui/core'
+
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import { makeStyles } from '@material-ui/core/styles';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+
+
 import './TableTile.scss'
+
+const useStyles = makeStyles((theme) => ({
+    formControl1: {
+       marginTop:"5%",
+        minHeight:"70%",
+        minWidth: 100,
+    },
+    formControl2: {
+        marginTop:"5%",
+        minHeight:"70%",
+        minWidth: 100,
+        float:"right",
+      },
+    selectEmpty: {
+     
+    },
+ 
+      selectRoot: {
+        color: "#A9A9A9"
+      },
+      icon: {
+        color: "#A9A9A9"
+      },
+      selectPaper: {
+        backgroundColor: "#1E1E24",
+        border: "1px solid #484850",
+        borderRadius: "5px",
+        color: "#FFFFFF",
+        "& li:hover": {
+          backgroundColor: "#303039"
+        }
+      }
+  }));
 export default function TableTileProvider(props) {
+    const classes = useStyles();
+
     const [role, setRole] = useState("")
     const [providerNumber, setProviderNumber] = useState("")
     const [gender, setGender] = useState("")
@@ -31,24 +75,56 @@ export default function TableTileProvider(props) {
             <Grid container>
                 <Grid item xs={2}><h5>{props.data.name}</h5></Grid>
                 <Grid item xs={2}>
-                    <select name="role" id="role" onChange={(e) => setRole(e.target.value)}>
-                        <option defaultValue value=""> Role</option>
-                        <option value="Super Admin">Super Admin</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Observer">Observer</option>
-                        <option value="Guest">Guest</option>
-                    </select>
+                <FormControl className={classes.formControl1}>
+                    <Select
+                    value={role}
+                    onChange={(e) => {setRole(e.target.value)}}
+                    displayEmpty
+                    
+                    className={classes.selectEmpty}
+                    
+                    classes={{
+                            root: classes.selectRoot,
+                            icon: classes.icon
+                    }}
+                    MenuProps={{ classes: { paper: classes.selectPaper } }}
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    >
+                    <MenuItem value="" disabled>
+                        Role
+                    </MenuItem>
+                    <MenuItem value="Super Admin">Super Admin</MenuItem>
+                    <MenuItem value="Admin">Admin</MenuItem>
+                    <MenuItem value="Observer">Observer</MenuItem>
+                    <MenuItem value="Guest">Guest</MenuItem>
+                    </Select>
+                </FormControl>
                 </Grid>
                 <Grid item xs={3}></Grid>
                 <Grid item xs={2}>
-                    <input type="tel" placeholder="Enter number" onChange={(e) => setProviderNumber(e.target.value)}/>
+                    <input type="tel" placeholder="Ph. Number" onChange={(e) => setProviderNumber(e.target.value)}/>
                 </Grid>
                 <Grid item xs={2}>
-                    <select name="gender" className="gender" id="gender" onChange={(e) => setGender(e.target.value)}>
-                        <option value="">Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                    </select>
+                    <FormControl className={classes.formControl2}>
+                    <Select
+                    value={gender}
+                    onChange={(e) => {setGender(e.target.value)}}
+                    displayEmpty
+                    className={classes.selectEmpty}
+                    classes={{
+                            root: classes.selectRoot,
+                            icon: classes.icon
+                    }}
+                    MenuProps={{ classes: { paper: classes.selectPaper } }}
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    >
+                    <MenuItem value="" disabled>
+                        Gender
+                    </MenuItem>
+                    <MenuItem value="Male">Male</MenuItem>
+                    <MenuItem value="Female">Female</MenuItem>
+                    </Select>
+                </FormControl>
                 </Grid>
                 <Grid item xs={1}>
                     <img onClick={handleRemove} src={Cross} alt=""/>

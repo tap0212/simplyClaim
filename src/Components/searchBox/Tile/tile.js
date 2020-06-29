@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import DoctorPNG from '../../../Utils/Assets/doctor-placeholder@2x.png'
 import UserPNG from '../../../Utils/Assets/people@2x.png'
-import Doctor from '../../../Utils/Assets/doctor@3x.png'
+import Dr from '../../../Utils/Assets/doctor@3x.png'
 import Add from '../../../Utils/Assets/add@3x.png'
 import Tick from '../../../Utils/Assets/tick@3x.png'
+import {ReactComponent as Doctor} from '../../../Utils/Assets/doctor-placeholder.svg' 
+
 import './tile.scss'
 const Tile = (props) => {
     const [isSelectedProvider, setIsSelectedProvider] = useState(false)
@@ -52,10 +53,10 @@ const Tile = (props) => {
                     props.data.type === "Provider" 
                     ?
                    <>
-                   <img className="png" src={DoctorPNG} alt=""/>
-                    <p className="name">{props.data.name}</p>
+                   <Doctor className="png"/>
+                    <p  className="name">{props.data.name}</p>
                     <p className="des">{props.data.activity}</p>
-                    <span className="dr"><img src={Doctor} alt=""/></span>
+                    <span className="dr"><img src={Dr} alt=""/></span>
                     <span className="add">
                         {
                             isSelectedProvider
@@ -69,7 +70,7 @@ const Tile = (props) => {
                     :
                     <>
                    <img className="png" src={UserPNG} alt=""/>
-                   <p className="name">{props.data.name}</p>
+                   <p  className="user">{props.data.name}</p>
                     <p className="des">User - {props.data.gender}</p>
                     <span className="add2">
                         {

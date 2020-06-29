@@ -4,8 +4,8 @@
     background-color: #121212;
     .mainDashboard{
         background-color: #121212;
-        margin-top: 14.44vh;
-        margin-left: 250px;
+        margin-top: 8.5rem;
+        margin-left: 230px;
         .note{
             line-height: 1.4;
             letter-spacing: normal;
@@ -16,7 +16,7 @@
             height: calc(100vh - 14.44vh);
             .bulb{
                 color: #202020;
-                font-size:20em;
+                font-size:20rem;
                 margin-top: 100px;
             }
             h1{
@@ -29,13 +29,12 @@
         .content{
             .searchBoxContainer{
                 h4{
-                    margin-top: 8%;
+                    
+                    margin-top: 2rem;
                     margin-left: 3.25vw;
-                    margin-bottom: 3%;
+                    margin-bottom: 1rem;
                     font-family: Poppins;
                     font-weight: 500;
-                    font-stretch: normal;
-                    font-style: normal;
                     line-height: 1.4;
                     letter-spacing: 1px;
                     color: rgba(255, 255, 255, 0.6);
@@ -43,30 +42,62 @@
             }
             .table{
                 width: 58vw;
-                margin-left: 3.125vw;
-                margin-top: 1%;
+                margin-left: 3.125rem;
+                margin-top: 1rem;
                 .th{
                     h5{
-                        margin-left:3%;
-                        margin-bottom: 3%;
+                        margin-left:1rem;
+                        margin-bottom: 1rem;
                         font-family: Poppins;
                         font-weight: 500;
-                        font-stretch: normal;
-                        font-style: normal;
                         line-height: 1.4;
                         letter-spacing: 1px;
                         color: rgba(255, 255, 255, 0.6);
                     }
                     .bank{
                         float: right;
-                        margin-right: 10%;
+                        margin-right: 2rem;
                     }
                     .gender{
                         float: right;
-                        margin-right: 20%;
+                        margin-right: 2rem;
                     }
                 }
             }
         }
     }
+}
+
+@media only screen and (min-width:1220px) and (max-width:1440px){
+    .dashboard{
+        .mainDashboard{
+            .content{
+                .searchBoxContainer{
+                    h4{
+                        margin-top: 2rem;
+                        margin-left: 3.25vw;
+                        margin-bottom: 1rem;
+                        font-family: Poppins;
+                        font-weight: 500;
+                        line-height: 1.4;
+                        letter-spacing: 1px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+                .table{
+                    width: 53vw;
+                    margin-left: 3.125rem;
+                    margin-top: 0.5rem;
+                    .th{
+                        h5{
+                            margin-left:1rem;
+                            margin-bottom: 0.5rem;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

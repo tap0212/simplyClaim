@@ -6,20 +6,21 @@ import MiniTopBar from '../topbar/miniTopBar'
 import SearchBox from '../searchBox/searchbox'
 import TableProviders from '../table/tableProviders'
 import TableUsers from '../table/tableUsers'
-
+import Providers from '../../Utils/Data/Provider.json'
+import Users from '../../Utils/Data/users.json'
 import {Grid} from '@material-ui/core'
 import './dashboard.scss'
 export default function Dashboard() {
 
     const [hospitals, setHospitals] = useState(HospitalData)
-    const [selectedHospital, setSelectedHospital] = useState(-1)
+    const [selectedHospital, setSelectedHospital] = useState(1)
     const [isScroll, setIsScroll] = useState(false)
     const [isProceedBtnActive,  setIsProceedBtnActive] = useState(false)
     const [selectedProviders, setSelectedProviders] = useState([])
     const [selectedUsers, setSelectedUsers] = useState([])
     useEffect(() => {
         document.addEventListener("scroll", () => {
-            const scroll = window.scrollY < 100 ? false : true;
+            const scroll = window.scrollY < 80 ? false : true;
       
             setIsScroll(scroll)
           });
@@ -34,6 +35,16 @@ export default function Dashboard() {
         setSelectedUsers(selectedUsers => [...selectedUsers, newUser])
     }
     
+    const AddAllUsers = () => {
+        setSelectedUsers(Users)
+    }
+    const AddAllProviders = () => {
+        setSelectedProviders(Providers)
+    }
+    const AddAllUsersAndProviders = () => {
+        setSelectedProviders(Providers)
+        setSelectedUsers(Users)
+    }
 
     const RemoveProvider = (provider) => {
         const arr = selectedProviders.filter(item => item !== provider)
@@ -65,7 +76,7 @@ export default function Dashboard() {
                 <Topbar isProceedBtnActive={isProceedBtnActive} hospitals={hospitals} selectedHospital={selectedHospital} />
 
         }
-            <Sidebar hospitals={hospitals} selectedHospital={selectedHospital} setSelectedHospital={setSelectedHospital} />
+            <Sidebar hospitals={hospitals} selectedHospital={selectedHospital} setSelectedHospital={setSelectedHospital}  />
 
         
         <div className="mainDashboard">
@@ -83,7 +94,7 @@ export default function Dashboard() {
                     <Grid item xs={3}>
                         <div className="searchBoxContainer">
                             <h4>All Providers & users</h4>
-                            <SearchBox  AddProvider={AddProvider} AddUser={AddUser} selectedProviders={selectedProviders} selectedUsers={selectedUsers} />
+                            <SearchBox  AddProvider={AddProvider} AddUser={AddUser} selectedProviders={selectedProviders} selectedUsers={selectedUsers} AddAllProviders={AddAllProviders} AddAllUsers={AddAllUsers} AddAllUsersAndProviders={AddAllUsersAndProviders}/>
                         </div>
                     </Grid>
                     <Grid item xs={9} style={{paddingLeft:"0"}}>

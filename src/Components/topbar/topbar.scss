@@ -1,51 +1,57 @@
 .topbar{
     z-index: 999;
-    height: 14.44vh;
+    height: 7rem;
     border-bottom: 3px solid #202020;
-    width: calc(100vw - 250px);
-    margin-left: 250px;
+    width: calc(100vw - 230px);
+    margin-left: 230px;
     background-color: #121212;
     position: fixed;
     top: 0;
+    padding-bottom: 1rem;
+    
     p{
-        font-family: Poppins;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.4;
-        font-size: 1em;
+        font-size: 1rem;
         letter-spacing: normal;
         color: #69cdff;
         cursor: pointer;
+        padding-bottom: 0;
+        margin-bottom: 0.5rem;
         .back{
-            margin-left: 2%;
+            margin-left: 2rem;
             transform: translateY(3px);
         }
     }
 
     .hospitalDetail{
         h1{
-            font-family: Poppins;
             font-weight: 500;
-            font-size: 1.9em;
-            font-stretch: normal;
-            font-style: normal;
+            font-size: 1.9rem;
             line-height: 1.2;
             letter-spacing: normal;
             color: rgba(255, 255, 255, 0.9);
-            margin-left: 2%;
-            margin-bottom: 0.5%;
-        }
-        h4{
-            font-family: Poppins;
+            margin-left: 2rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+            padding-top: 0;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.33;
             letter-spacing: normal;
+          
+        }
+        h4{
+            line-height: 1.33;
+            letter-spacing: normal;
             color: rgba(255, 255, 255, 0.6);
-            margin-left: 2%;
+            margin-left: 2rem;
             margin-top: 0;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+          
             .dot{
                 font-size: 10px;
             }
@@ -53,17 +59,17 @@
         .proceed-btn-active{
             border: 2px solid #202020;
             float: right;
-            margin-right: 50px;
-            padding: 10px 30px 10px 30px;
+            margin-right: 40px;
+            padding: 8px 25px 8px 25px;
             border-radius: 5px;
             background-color: #0f6ebe;
-            font-size: 1.2em;
+            font-size: 0.9em;
             font-family: Poppins;
             font-style: normal;
             line-height: 1.33;
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
-            transform: translateY(-80px);
+            transform: translateY(-3.8rem);
             transition: all 0.2s ease-in;
         }
         .proceed-btn-active:hover, .proceed-btn-active:active{
@@ -75,17 +81,17 @@
         .proceed-btn-disabled{
             border: 2px solid #202020;
             float: right;
-            margin-right: 50px;
-            padding: 10px 30px 10px 30px;
+            margin-right: 40px;
+            padding: 8px 25px 8px 25px;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 0.9em;
             font-family: Poppins;
             font-style: normal;
             line-height: 1.33;
             text-align: center;
             background-color: #121212;
             color: rgba(255, 255, 255, 0.9);
-            transform: translateY(-80px);
+            transform: translateY(-3.8rem);
             transition: all 0.2s ease-in;
         }
         .proceed-btn-disabled:hover, .proceed-btn-disabled:active{
@@ -97,25 +103,25 @@
 
 .minibar{
     z-index: 999;
-    height: 9.5vh;
+    height: 5rem;
     border-bottom: 3px solid #202020;
-    width: calc(100vw - 250px);
-    margin-left: 250px;
+    width: calc(100vw - 230px);
+    margin-left: 230px;
     background-color: #121212;
     position: fixed;
     top: 0;
+    padding-bottom: 0.5rem;
     p{
         font-family: Poppins;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         line-height: 1.4;
-        font-size: 1em;
+        font-size: 1rem;
         letter-spacing: normal;
         color: #69cdff;
         cursor: pointer;
+        margin-bottom: 0.3rem;
+        padding-bottom: 0;
         .back{
-            margin-left: 2%;
+            margin-left: 2rem;
             transform: translateY(3px);
         }
     }
@@ -124,26 +130,31 @@
         .name{
             font-family: Poppins;
             font-weight: 500;
-            font-size: 1.5em;
-            font-stretch: normal;
-            font-style: normal;
+            font-size: 1.5rem;
             line-height: 1.2;
-            letter-spacing: normal;
             color: rgba(255, 255, 255, 0.9);
-            margin-left: 2%;
-            margin-bottom: 0.5%;
-        }
-        .address{
-            font-family: Poppins;
+            margin-left: 2rem;
+            margin-top: 0;
+            padding-top: 0;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.33;
             letter-spacing: normal;
+          
+        }
+        .address{
+            line-height: 1.33;
             color: rgba(255, 255, 255, 0.6);
-            margin-left: 2%;
+            margin-left: 2rem;
             margin-top: 0;
-            font-size: 0.9em;
+            font-size: 0.9rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+          
             .dot{
                 font-size: 10px;
             }
@@ -191,4 +202,23 @@
             pointer-events: all !important;
         }
     }
+}
+
+@media only screen and (min-width:1220px) and (max-width:1440px){
+   
+}
+
+
+
+
+@media only screen and (min-width:1441px) and (max-width:1650px){
+
+}
+
+@media only screen and (min-width:1920px) and (max-width:2560px){
+
+}
+
+@media only screen and (min-width:2560px) and (max-width:2881px){
+
 }

@@ -5,13 +5,23 @@ import Providers from '../../Utils/Data/Provider.json'
 import Users from '../../Utils/Data/users.json'
 import './searchbox.scss'
 import Tile from './Tile/tile'
-import { Switch } from '@material-ui/core';
 export default function Searchbox(props) {
     const [selected, setSelected] = useState("All")
     const [Data, setData] = useState("")
-    const All = [...Providers, ...Users]
+    const [All, setAll] = useState("")
     useEffect(() => {
-        setData(All)
+        const shuffledData = []
+        let iterator = 0;
+        while(iterator < Providers.length && iterator< Users.length){
+         shuffledData.push(Providers[iterator])
+         if(iterator+1 !== Providers.length) shuffledData.push(Providers[iterator+1])
+         shuffledData.push(Users[iterator])
+         if(iterator+1 !== Users.length) shuffledData.push(Users[iterator+1])
+         iterator=iterator+2;
+         }
+         
+         setData(shuffledData)
+         setAll(shuffledData)
     }, [])
 
     
@@ -46,7 +56,15 @@ export default function Searchbox(props) {
                     }
                 }      
     }
-    
+    const AddAllUsers = () => {
+        props.AddAllUsers()
+    }
+    const AddAllProviders = () => {
+        props.AddAllProviders()
+    }
+    const AddAllUsersAndProviders = () => {
+        props.AddAllUsersAndProviders()
+    }
     return (
         <div className="searchbox">
             <div className="search">
@@ -64,17 +82,16 @@ export default function Searchbox(props) {
                 {
                     selected === "All" 
                     ?
-                    <p>Link all providers & users to this location<ArrowForwardIosTwoToneIcon className="arrow" /></p>
+                    <p onClick={AddAllUsersAndProviders}>Link all providers & users to this location<ArrowForwardIosTwoToneIcon className="arrow" /></p>
                     :
                     selected === "Providers" 
                         ?
-                        <p>Link all providers to this location<ArrowForwardIosTwoToneIcon className="arrow" /></p>
+                        <p onClick={AddAllProviders}>Link all providers to this location<ArrowForwardIosTwoToneIcon className="arrow" /></p>
                         :
-                        <p>Link all users to this location<ArrowForwardIosTwoToneIcon className="arrow" /></p>
+                        <p onClick={AddAllUsers}>Link all users to this location<ArrowForwardIosTwoToneIcon className="arrow" /></p>
                 }
     
             </div>
-
             <div className="list">
             {
                     selected === "All" 
@@ -91,14 +108,14 @@ export default function Searchbox(props) {
                         Data && 
                             Data.map((data, index) => {
                             return(
-                                <Tile  AddProvider={props.AddProvider} data={data} selectedProviders={props.selectedProviders}/>
+                                <Tile key={index}  AddProvider={props.AddProvider} data={data} selectedProviders={props.selectedProviders}/>
                             )
                             })    
                             :
                             Data && 
                             Data.map((data, index) => {
                             return(
-                                <Tile  AddUser={props.AddUser} data={data} selectedUsers={props.selectedUsers}/>
+                                <Tile key={index} AddUser={props.AddUser} data={data} selectedUsers={props.selectedUsers}/>
                             )
                             })      
             }

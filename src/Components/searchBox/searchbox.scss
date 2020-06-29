@@ -4,9 +4,10 @@
     background-color: #202020;
     .search{
         height: 5.55vh;
-        border-bottom: 3px solid #121212;
+        border-bottom: 2px solid #121212;
+       
         .searchSvg{
-            height: 55%;
+            height: 1.5rem;
             padding: 3%;
             margin-right: 5%;
         }
@@ -15,28 +16,27 @@
             width: 75%;
             margin-left: 20%;
             height: 4.5vh;
-            background-color: #202020;
+            background-color: transparent;
             border: none;
             transform: translateY(-5.7vh);
             font-family: Poppins;
             font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
             line-height: 1.4;
             letter-spacing: normal;
+            font-size: 1rem;
             color: rgba(255, 255, 255, 0.6);
         }
     }
 
     .toggleBar{
-        height: 6.11vh;
+        height: 7.11vh;
         border-bottom: 3px solid #121212;
         .toggle{
             margin-top: 1%;
             span{
                 cursor: pointer;
                 margin-left: 10%;
-                font-size: 1em;
+                font-size: 1rem;
                 font-family: Poppins;
                 line-height: 1.4;
                 letter-spacing: normal;
@@ -47,6 +47,7 @@
             }
         }
         p{
+            cursor: pointer;
             font-size: 0.8em;
             margin-left: 10%;
             font-family: Poppins;
@@ -57,6 +58,287 @@
                 margin-left: 5px;
                 font-size: 90%;
                 transform: translateY(2px);;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1220px){
+    .searchbox{
+        .toggleBar{
+            p{
+                font-size: 0.6em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1220px) and (max-width:1440px){
+    .searchbox{
+        width: 20vw;
+        margin-left: 2.8vw;
+        .search{
+            height: 5vh;
+            .searchSvg{
+                height: 1.5rem;
+                padding: 0.3rem;
+                margin-right: 5%;
+            }
+            input{
+                transform: translateY(-2.5rem);
+            }
+        }
+        .toggleBar{
+            height: 3.5rem;
+            .toggle{
+                span{
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0.2%;
+                }
+            }
+            p{
+                padding: 1%;
+                margin-top: 2%;
+                font-size: 0.64em;
+                padding: 0.5%;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width:1441px) and (max-width:1649px){
+    .searchbox{
+        width: 20vw;
+        margin-left: 2.5vw;    
+        .search{
+            height: 5.55vh;
+            border-bottom: 2px solid #121212;
+            .searchSvg{
+                height: 1.5rem;
+                padding: 3%;
+                margin-right: 5%;
+            }
+            input{
+                margin-top: 0;
+                width: 75%;
+                margin-left: 20%;
+                height: 4vh;
+                background-color: #202020;
+                border: none;
+                transform: translateY(-6vh);
+            }
+        }
+        .toggleBar{
+            .toggle{
+                span{
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0.2%;
+                }
+            }
+            p{
+                padding-bottom: 1%;
+                margin-top: 0%;
+                font-size: 0.7em;
+                padding: 0.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1650px) and (max-width:1919px){
+    .searchbox{
+        width: 18.75vw;
+        margin-left: 3.125rem;
+        background-color: #202020;
+        .search{
+            height: 3rem;
+            border-bottom: 2px solid #121212;
+            .searchSvg{
+                height: 1.5rem;
+                padding: 0.5rem;
+                margin-right: 5%;
+            }
+            input{
+                margin-top: 0;
+                width: 75%;
+                margin-left: 20%;
+                height: 2.5rem;
+                background-color: #202020;
+                border: none;
+                transform: translateY(-2.8rem);
+            }
+        }
+        .toggleBar{
+            height: 3.5rem;
+            .toggle{
+                span{
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0.2%;
+                }
+            }
+            p{
+                padding-bottom: 1%;
+                margin-top: 0%;
+                font-size: 0.7.5rem;
+                padding: 0.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1920px) and (max-width:2559px){
+    .searchbox{
+        width: 18.75vw;
+        margin-left: 3.125rem;
+        background-color: #202020;
+        .search{
+            height: 3.55rem;
+            border-bottom: 2px solid #121212;
+            .searchSvg{
+                height: 1.5rem;
+                padding: 0.7rem;
+                margin-right: 5%;
+            }
+            input{
+                margin-top: 0;
+                width: 75%;
+                margin-left: 20%;
+                height: 2rem;
+                background-color: #202020;
+                border: none;
+                transform: translateY(-2.6rem);
+            }
+        }
+        .toggleBar{
+            height: 3.5rem;
+            .toggle{
+                span{
+                    cursor: pointer;
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0.2rem;
+                }
+            }
+            p{
+                padding-bottom: 1rem;
+                margin-top: 0rem;
+                font-size: 0.85em;
+                padding: 0.1rem;
+                padding-top: 0.4rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:2560px) and (max-width:2880px){
+    .searchbox{
+        width: 18.75vw;
+        margin-left: 3.125vw;
+        background-color: #202020;
+        .search{
+            height: 5.55rem;
+            border-bottom: 2px solid #121212;
+            .searchSvg{
+                height: 1.5rem;
+                padding: 1.4rem;
+                margin-right: 5rem;
+            }
+            input{
+                margin-top: 0;
+                width: 75%;
+                margin-left: 20%;
+                height: 4rem;
+                background-color: #202020;
+                border: none;
+                transform: translateY(-4rem);
+            }
+        }
+        .toggleBar{
+            height: 4.5rem;
+            .toggle{
+                span{
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0.1rem;
+                }
+            }
+            p{
+                margin-top: 0%;
+                font-size: 0.85rem;
+                padding: 01rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:2880px) and (max-width:3841px){
+    .searchbox{
+        width: 18.75vw;
+        margin-left: 3.125vw;
+        background-color: #202020;
+        .search{
+            height: 3vh;
+            border-bottom: 2px solid #121212;
+           
+            .searchSvg{
+                height: 1.5rem;
+                padding: 3%;
+                margin-right: 5%;
+            }
+            input{
+                margin-top: 0;
+                width: 75%;
+                margin-left: 20%;
+                height: 4.5vh;
+                background-color: transparent;
+                border: none;
+                transform: translateY(-4vh);
+                font-family: Poppins;
+                font-weight: 500;
+                line-height: 1.4;
+                letter-spacing: normal;
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    
+        .toggleBar{
+            height: 4vh;
+            border-bottom: 3px solid #121212;
+            .toggle{
+                margin-top: 1%;
+                span{
+                    cursor: pointer;
+                    margin-left: 10%;
+                    font-size: 1rem;
+                    font-family: Poppins;
+                    line-height: 1.4;
+                    letter-spacing: normal;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+                .selectedTab{
+                    border-bottom: 4px solid blue;
+                }
+            }
+            p{
+                cursor: pointer;
+                font-size: 0.8em;
+                margin-left: 10%;
+                font-family: Poppins;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #61d4ff;
+                .arrow{
+                    margin-left: 5px;
+                    font-size: 90%;
+                    transform: translateY(2px);;
+                }
             }
         }
     }

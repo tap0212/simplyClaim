@@ -1,6 +1,6 @@
 .tile{
     padding: 1%;
-    height: 5.55vh;
+    height: 3.2rem;
     border-bottom: 3px solid #121212;
     .user{
         width: 80%;
@@ -11,6 +11,18 @@
                 padding: 2.5%;
             }
             .name{
+                margin: 0;
+                padding: 0;
+                margin-left: 15%;
+                margin-top: -15%;
+                font-size: 0.9em;
+                font-family: Poppins;
+                font-weight: 500;
+                line-height: 1.4;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .user{
                 margin: 0;
                 padding: 0;
                 margin-left: 15%;
@@ -62,23 +74,291 @@
     }
 }
 
-@media only screen and (min-width:2000px){
+
+
+@media only screen and (max-width:1220px){
     .tile{
-        height: 4vh;
-    }
-    .dr{
-        img{
-            transform: translateY(-90%);
+        height: 6vh;
+        .user{
+            .avatar{
+                .dr{
+                    img{
+                        transform: translateY(-290%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-450%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-330%);
+                    }
+                }
+            }
         }
     }
-    .add{
-        img{
-            transform: translateY(-210%);
+    
+}
+
+@media only screen and (min-width:1220px) and (max-width:1440px){
+    .tile{
+        height: 3rem;
+        .user{
+            .avatar{
+                .png{
+                    width: 9%;
+                    padding: 2.5%;
+                }
+                .name{
+                    margin: 0;
+                    padding: 0;
+                    margin-left: 15%;
+                    margin-top: -2rem;
+                    font-size: 0.9em;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    color: rgba(255, 255, 255, 0.9);
+                }
+    
+                .user{
+                    margin: 0;
+                    padding: 0;
+                    margin-left: 15%;
+                    margin-top: -15%;
+                    font-size: 0.9em;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    color: rgba(255, 255, 255, 0.9);
+                }
+                .des{
+                    font-family: Poppins;
+                    line-height: 1.5;
+                    font-size: 0.7em;
+                    margin-top: 1%;
+                    margin-left: 15%;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+                .dr{
+                    img{
+                        transform: translateY(-240%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-380%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-300%);
+                    }
+                }
+            }
         }
     }
-    .add2{
-        img{
-            transform: translateY(-130%);
+}
+
+
+
+
+@media only screen and (min-width:1441px) and (max-width:1649px){
+    .tile{
+        height: 5.5vh;
+        .user{
+            .avatar{ 
+                .dr{
+                    img{
+                        transform: translateY(-220%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-350%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-280%);
+                    }
+                }
+            }
         }
     }
+}
+
+
+@media only screen and (min-width:1650px) and (max-width:1919px){
+    .tile{
+        .user{
+            .avatar{ 
+                .dr{
+                    img{
+                        transform: translateY(-190%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-320%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-260%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1920px) and (max-width:2330px){
+    .tile{
+        .user{
+            .avatar{ 
+                .name{
+                    margin-top: -11.5%;
+                }
+                .dr{
+                    margin-left: 95%;
+                    img{
+                        width: 8%;
+                        margin: 0;
+                        transform: translateY(-130%);
+                    }
+                }
+                .dr{
+                    img{
+                        transform: translateY(-180%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-310%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-230%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:2330px) and (max-width:2560px){
+    .tile{
+        .user{
+            .avatar{ 
+                .name{
+                    margin-top: -11.5%;
+                }
+                .dr{
+                    margin-left: 95%;
+                    img{
+                        width: 8%;
+                        margin: 0;
+                        transform: translateY(-120%);
+                    }
+                }
+                .dr{
+                    img{
+                        transform: translateY(-160%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-280%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-215%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:2560px){
+    .tile{
+        .user{
+            .avatar{ 
+                .name{
+                    margin-top: -11.5%;
+                }
+                .dr{
+                    margin-left: 95%;
+                    img{
+                        width: 8%;
+                        margin: 0;
+                        transform: translateY(-120%);
+                    }
+                }
+                .dr{
+                    img{
+                        transform: translateY(-130%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-250%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-200%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:2560px) and (max-width:2880px){
+    .tile{
+        height: 3.9rem;
+    }
+}
+
+@media only screen and (min-width:2880px) and (max-width:3841px){
+    .tile{
+        height: 3.9rem;
+        .user{
+            .avatar{ 
+                .name{
+                    margin-top: -11.5%;
+                }
+                .dr{
+                    margin-left: 95%;
+                    img{
+                        width: 8%;
+                        margin: 0;
+                        transform: translateY(-120%);
+                    }
+                }
+                .dr{
+                    img{
+                        transform: translateY(-90%);
+                    }
+                }
+                .add{
+                    img{
+                        transform: translateY(-210%);
+                    }
+                }
+                .add2{
+                    img{
+                        transform: translateY(-180%);
+                    }
+                }
+            }
+        }
+    }
+
 }
